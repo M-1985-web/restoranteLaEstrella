@@ -1,0 +1,141 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante La Estrella</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header id="header">
+        <!--
+        <div class="wrapper">
+            <svg>
+                <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                    Restaurante La Estrella Del Oeste
+                </text>
+            </svg>
+        </div>
+        -->
+        <h1>Restorante La Estrella</h1>
+        <div class="flex-containerMenuNav">
+            <!--
+            <div class="flex-itemsMenuNav">
+                <a href="#bienvenidos">Bienvenidos</a>
+            </div>
+            -->
+            <div class="flex-itemsMenuNav">
+                <a href="#inicio">Bienvenidxs</a>
+            </div>
+            <div class="flex-itemsMenuNav">
+                <a href="#menu">Menú</a>
+            </div>
+            <div class="flex-itemsMenuNav">
+                <a href="#reservas">Reserva</a>
+            </div>
+            <div class="flex-itemsMenuNav">
+                <a href="#contacto">Contacto</a>
+            </div>
+        </div>
+        <!--
+        <h1>Restorante la Estrella del Oeste</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        -->
+    </header>
+
+
+    
+    <main>
+        <section id="inicio">
+            <h2>Bienvenidxs a La Estrella</h2>
+            <p>Somos un restaurante familiar que ofrece una variedad de platos típicos de la cocina argentina, elaborados con ingredientes frescos y de calidad. Disfruta de nuestro ambiente pensado totalmente para que conozcas nuestra escencia.</p>
+            <img src="./imagenesRestorante/restoranteGeneral.jpeg" alt="Foto del restaurante">
+        </section>
+
+
+
+        <section id="menu">
+            <h2>Nuestro menú</h2>
+            <p>Te ofrecemos una carta variada y sabrosa, con opciones para todos los gustos. Aquí te mostramos algunos de nuestros platos más populares:</p>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="./imagenesRestorante/milanesaNapo.jpeg" alt="Foto de una milanesa">
+                    <h3>Milanesa</h3>
+                    <p>Carne de ternera empanada y frita, acompañada de papas fritas o ensalada.</p>
+                    <p>Precio: $3400</p>
+                </div>
+                <div class="grid-item">
+                    <img src="./imagenesRestorante/enpanada.jpeg" alt="Foto de una empanada">
+                    <h3>Empanada</h3>
+                    <p>Masa de harina rellena de carne, queso, jamón, verduras o lo que más te guste, horneada o frita.
+                    </p>
+                    <p>Precio: $500</p>
+                </div>
+                <div class="grid-item">
+                    <img src="./imagenesRestorante/asado.jpeg" alt="Foto de un asado">
+                    <h3>Asado</h3>
+                    <p>Carne de vaca asada a la parrilla, con chimichurri y salsa criolla. Ideal para compartir con amigos o familia.</p>
+                    <p>Precio: $5000</p>
+                </div>
+                <div class="grid-item">
+                    <img src="./imagenesRestorante/alfajores.jpeg" alt="Foto de un alfajor">
+                    <h3>Alfajor</h3>
+                    <p>Dos galletas de maicena unidas por dulce de leche y bañadas en chocolate o coco. Un clásico de la repostería argentina.</p>
+                    <p>Precio: $500</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="reservas">
+            <h2>Reservas</h2>
+            <p>Si quieres asegurarte un lugar en nuestro restaurante, puedes hacer tu reserva online. Solo tienes que llenar el siguiente formulario y te confirmaremos por correo electrónico.</p>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required>
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" required>
+                <label for="personas">Personas:</label>
+                <input type="number" id="personas" name="personas" min="1" max="10" required>
+                <button type="submit">Reservar</button>
+            </form>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Si tienes alguna consulta, sugerencia o reclamo, puedes contactarnos por los siguientes medios:</p>
+            <ul>
+                <li>Teléfono: 011-1234-5678</li>
+                <li>Email: laestrella@gmail.com</li>
+                <li>Dirección: Av. Libertad 123, Libertad, Buenos Aires</li>
+            </ul>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.308153084982!2d-58.56182468477054!3d-34.54554798047764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb6c7c9a5a7d%3A0x8e5b8b6c9a5a5a7d!2sAv.%20Libertad%20123%2C%20B1716%20Libertad%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1633814211519!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </section>
+        <div class="opacity">
+            <a href="#header" class="boton-subir">↑</a>
+            <!-- Botón para subir al inicio -->
+        </div>
+
+    </main>
+
+    <footer>
+        © 2023 Desarrollado por Martín Maldonado. Todos los derechos reservados.
+    </footer>
+
+</body>
+
+</html>
